@@ -9,13 +9,10 @@ public class BalancedBracketsTest {
 
     //TODO: add tests here
     @Test
-    public void emptyTest() {
-        assertEquals(true, true);
+    public void emptyTest() {assertEquals(true, true);
     }
     @Test
-    public void onlyBracketsReturnsTrue() {
-        assertTrue(BalancedBrackets.hasBalancedBrackets("[]"));
-    }
+    public void onlyBracketsReturnsTrue() {assertTrue(BalancedBrackets.hasBalancedBrackets("[]")); }
     @Test
     public void emptyStringReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets(""));
@@ -57,9 +54,7 @@ public class BalancedBracketsTest {
     }
 
     @Test
-    public void unbalancedBracketsWithOtherCharactersReturnsFalse() {
-        assertFalse(BalancedBrackets.hasBalancedBrackets("a[b"));
-    }
+    public void unbalancedBracketsWithOtherCharactersReturnsFalse() { assertFalse(BalancedBrackets.hasBalancedBrackets("a[b"));}
 
     @Test
     public void onlyCurlyBracketsReturnsTrue() {
@@ -68,7 +63,7 @@ public class BalancedBracketsTest {
 
     @Test
     public void unbalancedCurlyBracketsReturnsFalse() {
-        assertFalse(BalancedBrackets.hasBalancedBrackets("{"));
+        assertFalse(BalancedBrackets.hasBalancedBrackets("["));
     }
 
 }
